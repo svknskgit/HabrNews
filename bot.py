@@ -4,9 +4,6 @@ from bs4 import BeautifulSoup
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
 
-
-token = "2009923746:AAHhuYgOBCpb53H9PqLDsYApgRwMSmKs8Fs"
-
 print("Бот запущен. Нажмите Ctrl+C для завершения")
 
 def on_start(update, context):
