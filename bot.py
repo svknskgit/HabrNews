@@ -2,8 +2,16 @@
 import  requests
 from bs4 import BeautifulSoup
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
+import configparser
+from aiogram import Bot, types
+from aiogram.dispatcher import Dispatcher
+from aiogram.utils import executor
 
+from config import TOKEN
 
+#bot = Bot(token=config.Token)
+#dp = Dispatcher(bot)
+token = TOKEN
 print("Бот запущен. Нажмите Ctrl+C для завершения")
 
 def on_start(update, context):
